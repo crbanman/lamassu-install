@@ -3,16 +3,17 @@ lamassu-install
 
 This will install your Lamassu Bitcoin Machine remote server.
 
-Instructions
+Instructions (Ubuntu user)
 ------------
 
-1. Start a new Digital Ocean droplet
-2. ssh into the droplet and paste the following command:
+1. Become root 'sudo -i'
+2. If you are running Ubuntu 15.04 you will need to make Upstart as the default service and boot manager by following the instructions here: https://wiki.ubuntu.com/SystemdForUpstartUsers#Switching_init_systems
+3. run the following command command:
 
     ```
     curl -#o install \
-    https://raw.githubusercontent.com/lamassu/lamassu-install/master/install && \
+    https://raw.githubusercontent.com/crbanman/lamassu-install/master/install && \
     bash install
     ```
 
-3. You should be set. Just follow the instructions on the screen to open your dashboard.
+4. You should be set. Just follow the instructions on the screen to open your dashboard.
